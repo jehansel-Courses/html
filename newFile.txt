@@ -15,3 +15,5 @@ AHORA HAGO ESTE CAMBIO EN LA RAMA cabeceraBorrame
 Línea 15 en cabeceraBorrame
 
 Línea 17 solo está en main
+
+Agregué la línea 19 directamente en github
