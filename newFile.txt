@@ -1,6 +1,6 @@
 Limpie el archivo desde github
 
 
-Estoy haciendo el HEADER
+HEADER
 
-Este es el nuevo FOOTER
+FOOTER
