@@ -1,0 +1,79 @@
+<!-- 
+https://www.freecodecamp.org/espanol/news/como-construir-una-forma-de-registro-con-etiquetas-flotantes-y-transiciones-usando-solamente/
+
+Como construir un formulario de registro con etiquetas flotantes y transiciones usando solamente HTML y CSS.
+
+En este tutorial vamos a construir un moderno formulario de registro con etiquetas flotantes y transiciones suaves usando simplemente HTML y CSS.
+Como puedes ver en la imagen de arriba, cuando una entrada dentro del formulario gana enfoque, su etiqueta flota en la parte superior y un borde semi-grueso aparece alrededor de la entrada. Si un texto es escrito dentro de la entrada y la entrada pierde enfoque, la etiqueta permanece en la parte superior. De otra manera, la etiqueta regresa hacia abajo a la entrada.
+Muchos formularios modernos tienen cierta forma de transición aplicada a ellos. No solo estas transiciones hacen el formulario más dinámico, pero también ayuda a guiar al usuario en el estado de entrada (así tenga enfoque o no) y que tipo de datos se espera manejar en cada entrada.
+En este tutorial, aprenderás acerca de algunas características interesantes de CSS como transiciones, selectores como :placeholder_focus, y muchas otras propiedades de CSS que deberías saber.
+¡Vamos a ello!
+
+El marcado HTML
+Vamos a definir el marcado para nuestro formulario de registro. Pero antes de eso, tenemos que configurar nuestro boilerplate HTML y vincular correctamente  nuestra hoja de estilo desde la etiqueta head. Puedes hacer esto fácilmente con el plugin Emmet escribiendo !  luego en su editor de IDE/Código.
+Puedes también copiar este boilerplate y pegarlo dentro de tu archivo index.html:
+
+Dentro de la etiqueta body, definimos el markup para nuestro formulario:
+
+Creamos un contenedor div para contener el elemento formulario. Cada una de las entradas del formulario con las etiquetas de texto, están envueltas dentro del contenedor div. Las etiquetas sirven el propósito de informar al usuario que información debe contener cada entrada.
+Y nuestra página debe verse como esto:
+
+Puedes haber notado que el valor del marcador que hemos asignado a todas las entradas es  "a".  Esto puede ser de ayuda más adelante en el tutorial cuando empezamos a aplicar cierta lógica dinámica.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!--
+    El marcado HTML
+    Vamos a definir el marcado para nuestro formulario de registro. Pero antes de eso, tenemos que configurar nuestro boilerplate HTML y vincular correctamente  nuestra hoja de estilo desde la etiqueta head. Puedes hacer esto fácilmente con el plugin Emmet escribiendo !  luego en su editor de IDE/Código.
+    Puedes también copiar este boilerplate y pegarlo dentro de tu archivo index.html:
+    
+    Dentro de la etiqueta body, definimos el markup para nuestro formulario:
+    
+    Creamos un contenedor div para contener el elemento formulario. Cada una de las entradas del formulario con las etiquetas de texto, están envueltas dentro del contenedor div. Las etiquetas sirven el propósito de informar al usuario que información debe contener cada entrada.
+    Y nuestra página debe verse como esto:
+    
+    Puedes haber notado que el valor del marcador que hemos asignado a todas las entradas es  "a".  Esto puede ser de ayuda más adelante en el tutorial cuando empezamos a aplicar cierta lógica dinámica.
+    -->    
+
+    <div class="signupFrm">
+        <form action="" class="form">
+            <h1 class="title">Sign up</h1>
+
+            <div class="inputContainer">
+                <input type="text" class="input" placeholder="a">
+                <label for="" class="label">Email</label>
+            </div>
+
+            <div class="inputContainer">
+                <input type="text" class="input" placeholder="a">
+                <label for="" class="label">Username</label>
+            </div>
+
+            <div class="inputContainer">
+                <input type="text" class="input" placeholder="a">
+                <label for="" class="label">Password</label>
+            </div>
+
+            <div class="inputContainer">
+                <input type="text" class="input" placeholder="a">
+                <label for="" class="label">Confirm Password</label>
+            </div>
+
+            <input type="submit" class="submitBtn" value="Sign up">
+        </form>
+    </div>
+</body>
+
+</html>
